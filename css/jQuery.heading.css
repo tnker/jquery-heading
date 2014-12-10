@@ -1,0 +1,37 @@
+
+body {
+    position: relative;
+}
+
+body > .heading {
+    position: fixed;
+    font-size: .6em;
+    line-height: 1.0em;
+    right: 10px;
+    padding: 8px 0;
+    max-width: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: rgba(200, 200, 200, .8);
+    color: #333;
+    padding: 4px 6px;
+    opacity: .3;
+    z-index: 0;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+body > .heading:hover,
+body > .heading.selected {
+    opacity: 1;
+    max-width: 180px;
+}
+
+body > .heading.selected {
+    z-index: 1;
+}
+
+body > .heading:hover {
+    z-index: 2;
+}
