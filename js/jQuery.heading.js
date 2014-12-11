@@ -18,10 +18,8 @@
         defaults = {
             content : null,
             inner   : 'innerHTML',
-            wrapId  : 'heading-wrap',
             prefix  : 'heading-',
             max     : 3,
-            dom     : null,
             type    : 'scroll',
             anchorFn: function(i) {
                 return 's' + i;
